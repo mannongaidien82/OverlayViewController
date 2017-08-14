@@ -10,7 +10,7 @@ import UIKit
 
 class MessageViewController: UIViewController, OverlayViewController {
     let overlaySize: CGSize? = CGSize(width: UIScreen.main.bounds.width * 0.8,
-                                      height: 120.0)
+                                      height: UIScreen.main.bounds.height-200)
     @IBAction func closeButtonPressed() {
         dismissOverlay()
     }
