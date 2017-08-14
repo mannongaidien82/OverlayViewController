@@ -1,0 +1,21 @@
+#parent {
+    background: #fff;
+}
+#parent.parent__clicked {
+    background: #bada55;
+}
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.spanclick{
+	padding: 1px 0px;
+}
