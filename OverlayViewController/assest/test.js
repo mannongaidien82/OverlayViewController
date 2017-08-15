@@ -1,3 +1,4 @@
+var isMobile = false;
 $(document).ready(function () {
 	//For performance!
 	// document.getElementById("parent").onclick = function (e) {
@@ -6,7 +7,19 @@ $(document).ready(function () {
 	//         this.className = "parent__clicked";
 	//   }
 	// };
+	document.onkeypress = enter;
 });
+
+function enter(e) {
+  if (e.which == 13) { 
+  	console.log("key 13");
+  	testMobile();
+  }
+}
+
+function testMobile() {
+	if(isMobile) location.href = "";
+}
 
 var clickedSpan = "";
 
